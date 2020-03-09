@@ -1,0 +1,12 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - overflow_2
+
+Payload-ul e generat cu urmatoarea comanda:
+python -c 'print "A"*12 + "light" + "\x00"'
+
+Inceputul buffer-ului in care se citeste si variabila comparata cu stringul
+"light" se afla la distanta de 0x1a - 0xe = 0xc bytes. Trebuie sa umplem 0xc
+bytes pentru a ajunge la inceputul variabilei, iar apoi sa scriem stringul
+"light" urmat de un null byte pentru orice eventualitate.
+
+Flagul este:
+iocla_the_hack_life_ch0se_me

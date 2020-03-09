@@ -1,0 +1,9 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - basic
+
+Pentru rezolvarea acestui task am folosit comanda 'nm basic' care afiseaza
+toate simbolurile din binar. Una dintre liniile din output arata astfel:
+
+0804a020 B iocla_baby_steps
+
+Flagul este:
+iocla_baby_steps

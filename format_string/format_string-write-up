@@ -1,0 +1,13 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - format_string
+
+Argumentul in linia de comanda dat pentru rezolvare este generat cu urmatoarea
+comanda:
+python -c 'print "\xb4\x9a\x04\x08" + "a"*16  + "%n"'
+
+Primul lucru prezent este adresa care vrem sa fie suprascrisa cu valoarea 0x14.
+Dupa care sunt prezenti inca 16 bytes de junk ca mai apoi sa apara
+specificatorul "%n" care pune intr-o adresa de memorie(adresa prezenta la
+inceputul payloadului) numarul de bytes scrisi pana la momentul actual.
+
+Flagul este:
+iocla_ayyyy_macarena!!

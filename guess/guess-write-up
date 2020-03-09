@@ -1,0 +1,7 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - guess
+
+Pentru a rezolva acest task trebuie sa citim de la stdin numarul 0xeb62 pentru
+a trece cu succes de instructiunea 'cmp eax, 0xeb62' si a obtine flagul.
+
+Flagul este:
+iocla_all_warmed_up

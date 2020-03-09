@@ -1,0 +1,8 @@
+elchapo187 - Popescu Lucian Ioan - luci.ion771@gmail.com - chain_call
+
+Trebuie sa dam la stdin numarul 0xfffa(65530) pentru a se aduna mai apoi
+valoarea 5 la el. In final o sa fie comparat cu word-ul 0xffff si se va apela
+functia get_flag.
+
+Flagul este:
+iocla_math_has_always_been_a_lie
